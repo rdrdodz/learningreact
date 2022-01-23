@@ -1,0 +1,19 @@
+.outer-boundry{
+    border: 5px solid;
+    border-radius: 10px;
+    width: 30%;
+    margin: 5px;
+    padding: 2px;
+}
+
+.red-border{
+    border-color: red;
+}
+
+.blue-border{
+    border-color: blue;
+}
+
+.wider{
+    width: 80%;
+}
