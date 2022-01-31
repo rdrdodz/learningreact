@@ -4,7 +4,7 @@ import NewStudentForm from "./NewStudentForm";
 function NewStudent(props){
     return (
             <Wrapper myclass="blue-border">
-                <NewStudentForm />
+                <NewStudentForm getNewStudent={props.getNewStudent}/>
             </Wrapper>
     );
 }

@@ -3,6 +3,7 @@ import './Student.css';
 import Wrapper from './Wrapper';
 
 function Student(props){
+    console.log("Printing Props", props);
     const date = (new Date(props.date)).toISOString();
     const name = props.name;
     const [age, setAge]= useState(parseInt(props.age));

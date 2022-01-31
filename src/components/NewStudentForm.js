@@ -31,6 +31,7 @@ function NewStudentForm(props){
             date: ""
         })
         console.log(event);
+        props.getNewStudent(values);
     }
 
     return(
