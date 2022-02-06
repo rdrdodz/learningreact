@@ -1,0 +1,10 @@
+.green-thin{
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 80%;
+    border: 2px solid green;
+    background-color: aquamarine;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
