@@ -39,7 +39,7 @@ function NewStudentForm(props){
             <input name="name" value={input.name} type="text" placeholder="Name" onChange={onChangeHandler} /><br />
             <input name="age" value={input.age} type="number" min="15" max="100" step="1" placeholder="Age" onChange={onChangeHandler} /> <br />
             <input name="date" value={input.date} type="date" placeholder="Date of Entry" onChange={onChangeHandler} /> <br />
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-danger">Submit</button>
         </form>
     );
 }
