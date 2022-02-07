@@ -8,3 +8,11 @@
     display: flex;
     justify-content: space-around;
 }
+
+.red-thick{
+    margin: 15px auto;
+    padding: 15px auto;
+    width: 80%;
+    border: 5px solid red;
+    background-color: pink;
+}
