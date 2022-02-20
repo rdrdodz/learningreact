@@ -1,5 +1,6 @@
 import "./NewStudentForm.css"
 import {useRef} from "react"
+import BackDrop from "./BackDrop";
 
 const NewStudentForm = props=>{
     let studentNameInput = useRef("");
@@ -14,12 +15,15 @@ const NewStudentForm = props=>{
             studentMajor: studentMajorInput.current.value
         }
 
-        studentNameInput.current.value = "";
-        studentLevelInput.current.value = "";
-        studentMajorInput.current.value = "";
+        if(studentNameInput.current.value.length === 0){
+            <BackDrop />
+        }else{
+            studentNameInput.current.value = "";
+            studentLevelInput.current.value = "";
+            studentMajorInput.current.value = "";
 
-        props.onSubmitHandler(inputs);
-
+            props.onSubmitHandler(inputs);
+        }
     };
     return (
         <form onSubmit={onSubmitHandler}>
